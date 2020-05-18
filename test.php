@@ -9,12 +9,13 @@ function insertTemps($temps, $tracker) {
     }endforeach;
 }
 
-insertTemps([6, 7, 8.8, "sdsds"], $tracker);
+insertTemps(["dsds", 200, 6, 7, 8.8, "sdsds"], $tracker);
 echo json_encode( 
         array( 
             "list" => $tracker->getList(),
             "max" => $tracker->getMax(),
-            "min" => $tracker->getMin()
+            "min" => $tracker->getMin(),
+            "avg" => $tracker->getMean()
         ) 
     )
 
