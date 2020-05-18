@@ -5,7 +5,7 @@ class TempTracker{
     private $min = null;
     private $sum =null;
     private $count = 0;
-
+    //add temp to list
     public function setTemp($temperature){
         if(!is_int($temperature) && !is_float($temperature) ){
             throw new Exception('temperature must be an integer or float!');
@@ -13,7 +13,7 @@ class TempTracker{
         $this->tempList[] = $temperature;
     }
      //Get List
-     public function getList(){
+    public function getList(){
         return $this->tempList;
     }
     //Get Max
