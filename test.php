@@ -9,7 +9,7 @@ function insertTemps($temps, $tracker) {
     }endforeach;
 }
 
-insertTemps([6, 7, 8.8], $tracker);
+insertTemps([6, 7, 8.8, "sdsds"], $tracker);
 echo json_encode( 
         array( 
             "list" => $tracker->getList(),
